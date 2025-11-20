@@ -8,7 +8,10 @@ class Etudiant {
         this.age = age
         this.section = section
     };
+    description(){
+        return `${this.nom} (${this.age} ans) - Section: ${this.section}`;
+    }
 }
 
-MediaSourceHandle.exports = Etudian; // si projet Node
+module.exports = Etudiant; // si projet Node
 // ou export default Etudiant; pour un projet front 
